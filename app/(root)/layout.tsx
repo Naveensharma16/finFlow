@@ -8,10 +8,10 @@ export default function RootLayout({
   }) {
     return (
       <main className="flex">
-        <div className="w-[20%]">
+        <div className="w-[9%] lg:w-[20%]">
         <Sidebar/>
         </div>
-        <div className="w-[80%]">
+        <div className="w-[91%] lg:w-[80%]">
         {children}
         </div>
       </main>

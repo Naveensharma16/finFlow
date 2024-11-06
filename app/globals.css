@@ -7,7 +7,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+body{
+  background-color: #fff;
+}
 /* hiding scrollbar for firefox */
 
 .no-scrollbar::-webkit-scrollbar {
@@ -27,5 +29,26 @@
     @apply text-16 placeholder:text-16 border border-gray-300 text-gray-900 placeholder:text-gray-700;
   }
 
+  .profile{
+    @apply relative;
+  }
+  .profile-bg{
+    @apply bg-right-sidebar bg-cover bg-no-repeat p-12;
+  }
+
+  .profile-img{
+      @apply rounded-full w-24 h-24 bg-gray-100 flex justify-center items-center absolute top-12 left-3 border-4 border-white shadow-lg;
+  }
+
+  .profile-desc{
+      @apply pt-14 px-3;
+  }
+
+  .bank-card{
+      @apply relative block h-[190px] w-[320px] rounded-[20px]
+       bg-gradient-to-r from-[#0179FE] to-[#4893FF]
+       ;
+  }
 
 }
+
